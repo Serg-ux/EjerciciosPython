@@ -1,0 +1,7 @@
+import subprocess
+
+#previamente hay que localizar la ruta del browser, chrome en este caso
+
+terminoBusqueda = input ("escribe tu términio de búsqueda")
+chrome = "C:\Program Files\Google\Chrome\Application\chrome.exe"
+subprocess.call([chrome, 'www.google.com\search?q='+terminoBusqueda])
