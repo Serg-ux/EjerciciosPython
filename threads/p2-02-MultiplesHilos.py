@@ -1,12 +1,13 @@
 import threading
-#def es para definir funciones
+
 def actividad():
-    print("escribo desde un hilo")
+    print ("Escribo desde un hilo")
     return
-print ("inicio")
-hilos=list()
+
+print ("INICIO")
+hilos = list()
 for i in range(50):
-    t=threading.Thread(target=actividad)
+    t = threading.Thread(target=actividad)
     hilos.append(t)
     t.start()
-print("escribo desde el principal")
+print ("ESCRIBO DESDE EL PRINCIPAL")
